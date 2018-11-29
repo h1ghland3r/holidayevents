@@ -24,10 +24,7 @@ export class FormComponent implements OnInit {
     }
 
     private save(): void {
-        this.holidayService.add(this.name);
-        this.holidayService.add(this.date);
-        this.holidayService.add(this.location);
-        this.holidayService.add(this.note);
+        this.holidayService.save(this.name, this.date, this.location, this.note);
 
         // then clear the values after submit
         this.name = '';
