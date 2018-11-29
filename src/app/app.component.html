@@ -24,7 +24,7 @@
                 <tr class="d-flex" *ngFor="let event of holidayService.getEvents()">
                     <td class="col-1">{{ event.id }}</td>
                     <td class="col-2">{{ event.name }}</td>
-                    <td class="col-2">{{ event.date }}</td>
+                    <td class="col-2">{{ event.date | date: 'MM-dd-yyyy' }}</td>
                     <td class="col-2">{{ event.location }}</td>
                     <td class="col-2">{{ event.note }}</td>
                     <td class="col-2">
