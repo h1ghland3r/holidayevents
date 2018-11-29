@@ -26,9 +26,9 @@
                     <td class="col-2">{{ event.name }}</td>
                     <td class="col-2">{{ event.date | date: 'MM-dd-yyyy' }}</td>
                     <td class="col-2">{{ event.location }}</td>
-                    <td class="col-2">{{ event.note }}</td>
-                    <td class="col-2">
-                        <!-- TODO Add Edit / Remove -->
+                    <td class="col-3">{{ event.note }}</td>
+                    <td class="col-2 text-center">
+                        <app-actions [event]="event"></app-actions>
                     </td>
                 </tr>
             </tbody>
