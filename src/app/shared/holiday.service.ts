@@ -45,6 +45,9 @@ export class HolidayService {
     }
 
     public remove(id: number): void {
+        let events = this.getEvents();
+        events = events.filter((event) => event.id !== id);
+        this.setLocalStorage(events);
     }
 
 }
