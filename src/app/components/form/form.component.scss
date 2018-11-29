@@ -1,0 +1,9 @@
+@import '../../app.component.scss';
+
+button[type=submit] {
+    min-width: 200px;
+
+    .fa-plus {
+        color: $white;
+    }
+}
